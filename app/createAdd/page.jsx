@@ -198,7 +198,7 @@ export default function CreateAddPage() {
                 </div>
 
                 <div>
-                    <label htmlFor="highestKey" className="block font-semibold mb-1">Your highest key timed</label>
+                    <label htmlFor="highestKey" className="block font-semibold mb-1">Your highest dungeon timed</label>
                     <input
                         id="highestKey"
                         name="highestKey"
