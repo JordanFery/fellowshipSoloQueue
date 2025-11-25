@@ -91,7 +91,7 @@ export async function POST(req) {
             where: {
                 invitationLink,
                 lastHeartbeat: {
-                    gte: new Date(now.getTime() - 20_000) // 120 sec d’activité, adapte selon durée réelle
+                    gte: new Date(now.getTime() - 120_000) // 120 sec d’activité, adapte selon durée réelle
                 },
             },
         });
