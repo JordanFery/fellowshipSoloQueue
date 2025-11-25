@@ -177,7 +177,7 @@ export default function PlayersPage() {
                   }}
                   className="bg-slate-800 text-white px-2 py-1 rounded-md hover:cursor-pointer mt-2"
                 >
-                  Copy link
+                  Copy Friendcode
                 </button>
               </p>
 
