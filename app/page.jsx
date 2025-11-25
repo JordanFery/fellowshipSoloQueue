@@ -138,6 +138,7 @@ export default function PlayersPage() {
         <input
           type="number"
           placeholder="Key minimum"
+          min={0}
           value={filterKey}
           onChange={(e) => setFilterKey(e.target.value)}
           className="border p-2 rounded"
