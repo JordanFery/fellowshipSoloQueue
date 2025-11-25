@@ -4,13 +4,13 @@ import { NextResponse } from 'next/server'
 const heroImages = {
     ardeos: "/ardeos.webp",
     elarion: "/elarion.webp",
-    helena: "/helena.jpg",
-    mara: "/mara.jpg",
+    helena: "/helena.webp",
+    mara: "/mara.webp",
     meiko: "/meiko.webp",
     rime: "/rime.webp",
     sylvie: "/sylvie.webp",
     tariq: "/tariq.webp",
-    vigour: "/vigour.jpg",
+    vigour: "/vigour.webp",
 };
 
 const heroRoles = {
