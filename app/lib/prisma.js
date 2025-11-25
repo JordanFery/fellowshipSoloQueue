@@ -42,13 +42,17 @@ if (!globalForPrisma.prisma) {
     const pool = new Pool({
         connectionString,
         max: 1, // Important pour Vercel
+        idleTimeoutMillis: 0,
+        connectionTimeoutMillis: 10000,
+        // Ces options sont importantes pour pgBouncer en mode transaction
+        allowExitOnIdle: true,
     })
 
     const adapter = new PrismaPg(pool)
 
     globalForPrisma.prisma = new PrismaClient({
         adapter,
-        log: process.env.NODE_ENV === 'development' ? ['query', 'error', 'warn'] : ['error'],
+        log: ['error'],
     })
 }
 
