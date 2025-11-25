@@ -91,7 +91,7 @@ export async function POST(req) {
             where: {
                 invitationLink,
                 lastHeartbeat: {
-                    gte: new Date(now.getTime() - 120_000) // 120 sec d’activité, adapte selon durée réelle
+                    gte: new Date(now.getTime() - 300_000) // 120 sec d’activité, adapte selon durée réelle
                 },
             },
         });
@@ -134,7 +134,7 @@ export async function POST(req) {
 export async function GET() {
     try {
         const now = new Date()
-        const thirtySecondsAgo = new Date(now.getTime() - 120_000)
+        const thirtySecondsAgo = new Date(now.getTime() - 300_000)
 
         const players = await prisma.playerRequest.findMany({
             where: {
