@@ -98,7 +98,7 @@ export default function CreateAddPage() {
     return (
         <div className="p-6 max-w-lg mx-auto">
             <Header />
-            <h1 className="text-2xl font-bold mb-6 text-center mt-40">Créer une nouvelle annonce</h1>
+            <h1 className="text-2xl font-bold mb-6 text-center mt-40">Create your post</h1>
             {submitMessage && (
                 <div className={`mb-4 p-3 rounded shadow-md text-center text-white 
         ${submitMessageType === 'success' ? 'bg-green-500' : 'bg-red-500'}`}>
