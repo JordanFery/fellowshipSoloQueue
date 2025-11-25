@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model PlayerRequest {
+  id             Int          @id @default(autoincrement())
+  hero           String       @db.VarChar(7)
+  imageHero      String
+  itemLevel      Int
+  keyResearched  Int
+  highestKey     Int
+  invitationLink String       @db.VarChar(33)
+  role           Role
+  localisation   Localisation
+  rating         Int
+  lastHeartbeat  DateTime?    @default(now())
+  createdAt      DateTime     @default(now())
+}
+
+enum Role {
+  TANK
+  DPS
+  HEAL
+}
+
+enum Localisation {
+  NA
+  EU
+  ASIA
+}
