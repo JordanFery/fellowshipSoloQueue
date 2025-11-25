@@ -162,6 +162,7 @@ export default function PlayersPage() {
             <div>
               <p><strong>Localisation:</strong> {player.localisation}</p>
               <p><strong>Hero:</strong> {player.hero}</p>
+              <p><strong>Item level:</strong> {player.itemLevel}</p>
               <p><strong>Role:</strong> {player.role}</p>
               <p><strong>Highest timed dungeon:</strong> {player.highestKey}</p>
               <p><strong>Reaserched difficulty:</strong> {player.keyResearched}</p>
