@@ -147,7 +147,7 @@ export default function CreateAddPage() {
                 </div>
 
                 <div>
-                    <label htmlFor="localisation" className="block font-semibold mb-1">Localisation</label>
+                    <label htmlFor="localisation" className="block font-semibold mb-1">Location</label>
                     <select
                         name="localisation"
                         id="localisation"

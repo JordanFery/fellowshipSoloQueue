@@ -137,7 +137,7 @@ export default function PlayersPage() {
         {/* Filtre clé recherchée >= */}
         <input
           type="number"
-          placeholder="Key minimum"
+          placeholder="Dungeon level"
           min={0}
           value={filterKey}
           onChange={(e) => setFilterKey(e.target.value)}
