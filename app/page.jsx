@@ -116,7 +116,7 @@ export default function PlayersPage() {
           onChange={(e) => setFilterRole(e.target.value)}
           className="border p-2 rounded"
         >
-          <option value="">Tous les rôles</option>
+          <option value="">All roles</option>
           <option value="dps">DPS</option>
           <option value="tank">Tank</option>
           <option value="heal">Healer</option>
@@ -128,10 +128,10 @@ export default function PlayersPage() {
           onChange={(e) => setFilterLoc(e.target.value)}
           className="border p-2 rounded"
         >
-          <option value="">Toutes les zones</option>
+          <option value="">All around the wolrd</option>
           <option value="EU">Europe</option>
-          <option value="NA">Amérique du Nord</option>
-          <option value="ASIA">Asie</option>
+          <option value="NA">North America</option>
+          <option value="ASIA">Asia</option>
         </select>
 
         {/* Filtre clé recherchée >= */}
@@ -145,7 +145,7 @@ export default function PlayersPage() {
       </div>
 
       {/* --- TON RETURN NORMAL --- */}
-      {filteredPlayers.length === 0 && <p>Aucun joueur pour l’instant.</p>}
+      {filteredPlayers.length === 0 && <p>No player for the moment.</p>}
 
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
         {filteredPlayers.map((player) => (
