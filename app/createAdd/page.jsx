@@ -106,7 +106,7 @@ export default function CreateAddPage() {
                 </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-4 bg-white p-6 rounded shadow-md">
+            <form onSubmit={handleSubmit} className="space-y-4 bg-white text-black  p-6 rounded shadow-md">
 
                 <div>
                     <label htmlFor="hero" className="block font-semibold mb-1">Hero</label>
@@ -116,7 +116,7 @@ export default function CreateAddPage() {
                         value={form.hero}
                         maxLength={7}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full border border-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                     >
                         <option value="">Select a hero</option>
                         <option value="ardeos">Ardeos</option>
@@ -142,7 +142,7 @@ export default function CreateAddPage() {
                         max={330}
                         value={form.itemLevel}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full border border-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
                 </div>
 
@@ -155,7 +155,7 @@ export default function CreateAddPage() {
                         maxLength={4}
                         value={form.localisation}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full border border-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                     >
                         <option value="">Select a region</option>
                         <option value="NA">North America</option>
@@ -175,7 +175,7 @@ export default function CreateAddPage() {
                         max={20000}
                         value={form.rating}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full border border-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
                 </div>
 
@@ -190,7 +190,7 @@ export default function CreateAddPage() {
                         max={99}
                         value={form.keyResearched}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full border border-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
                     {errors.keyResearched && (
                         <p className="text-red-500 text-sm mt-1">{errors.keyResearched}</p>
@@ -208,7 +208,7 @@ export default function CreateAddPage() {
                         max={99}
                         value={form.highestKey}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full border border-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
                     {errors.highestKey && (
                         <p className="text-red-500 text-sm mt-1">{errors.highestKey}</p>
@@ -224,7 +224,7 @@ export default function CreateAddPage() {
                         maxLength={37}
                         value={form.invitationLink}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full border border-black rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                     />
                     {errors.invitationLink && (
                         <p className="text-red-500 text-sm mt-1">{errors.invitationLink}</p>
